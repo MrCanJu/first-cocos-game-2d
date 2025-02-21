@@ -30,12 +30,12 @@ export class PlayerController extends Component {
   toogleInput(flag: boolean) {
     if (flag) {
       input.on(Input.EventType.MOUSE_UP, this.onMouseUp, this);
-      this.leftTouch.on(Input.EventType.TOUCH_START, this.onTouchStart, this);
-      this.rightTouch.on(Input.EventType.TOUCH_START, this.onTouchStart, this);
+      //   this.leftTouch.on(Input.EventType.TOUCH_START, this.onTouchStart, this);
+      //   this.rightTouch.on(Input.EventType.TOUCH_START, this.onTouchStart, this);
     } else {
       input.off(Input.EventType.MOUSE_UP, this.onMouseUp, this);
-      this.leftTouch.off(Input.EventType.TOUCH_START, this.onTouchStart, this);
-      this.rightTouch.off(Input.EventType.TOUCH_START, this.onTouchStart, this);
+      //   this.leftTouch.off(Input.EventType.TOUCH_START, this.onTouchStart, this);
+      //   this.rightTouch.off(Input.EventType.TOUCH_START, this.onTouchStart, this);
     }
   }
 
